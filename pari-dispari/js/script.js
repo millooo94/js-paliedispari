@@ -1,28 +1,26 @@
-const UserEvenOdd = prompt('pari o dispari)')
-const UserNumber = prompt('Inserisci un numero da 1 a 5')
+const UserEvenOdd = prompt('pari o dispari');
+const UserNumber = parseInt(prompt('Inserisci un numero da 1 a 5'));
 
-let randomIndex;
+const randomPCNumber = randomNumber(1, 5);
 
-for (let i = 0; i < 5; i++) {
+console.log('numero random', randomPCNumber);
 
-    randomIndex = randomNumber(1, 5);
-}
+const numberSum = UserNumber + randomPCNumber;
 
-const somma = UserNumber + randomIndex
+console.log('somma', numberSum);
 
-if (isEven(somma)) {
-    alert
-}
-
-
-
-
+if ((isEven(numberSum) && UserEvenOdd == 'pari') || (!isEven(numberSum) && UserEvenOdd == 'dispari')) {
+    alert('hai vinto!')
+    
+} else {
+    alert ('hai perso!')
+};
 
 
 
 function randomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min
-}
+};
 
 function isEven(number) {
     if (number % 2 == 0) {
@@ -30,4 +28,4 @@ function isEven(number) {
     } else {
     return false
     }
-}
+};
