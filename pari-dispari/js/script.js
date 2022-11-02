@@ -103,23 +103,3 @@ function timeout() {
     eleText.classList.remove('error');
 }
 
-
-
-
-function randomNumber(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min
-};
-
-function isEven(number) {
-    if (number % 2 == 0) {
-        return true
-    } else {
-    return false
-    }
-};
-
-
-function timeout() {
-
-    eleText.classList.remove('error');
-}
