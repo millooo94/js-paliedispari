@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poor Story', cursive;
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    background-color: #264653;
+    color: white;
+}
+
+h1 {
+
+    font-family: 'Poor Story', cursive;
+
+    
+    
+}
+
+h2 {
+    font-size: 2rem;
+    color: #264653;
+    text-shadow: 2px 2px #2a9d8f;
+}
+
+main {
+    position: relative;
+    height: calc(100vh - 15rem);
+    display: flex;
+}
+
+main > div {
+    height: 100%;
+}
+
+h2 {
+    text-align: center;
+}
+
+.div1 {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    background-color: #2a9d8f;
+}
+
+.user-message {
+    font-size: 6rem;
+    color: #f4a261;
+    
+}
+
+.div2 {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    background-color: #2a9d8f;
+}
+
+.pc-message {
+    font-size: 6rem;
+    color: #f4a261;
+}
+
+.div-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 18%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sum-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    margin-bottom: 1rem;
+    font-size: 7rem;
+    background-color: #e9c46a;
+    color: #264653;
+}
+
+.even-odd-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 1rem;
+    padding: 1rem;
+    border-radius: 15px;
+    text-transform: uppercase;
+    background-color: crimson;   
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12rem;
+    background-color: #2a9d8f;
+  
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 2rem;
+    animation-name: none;
+}
+
+input {
+    width: 50%;
+    height: 2rem;
+    font-size:1.5rem;
+    text-transform: uppercase;
+    transition: box-shadow 0.5s;
+    box-shadow: 0 0 0 transparent;
+    text-align: center;
+    animation-name: none;
+}
+
+input:focus {
+    scale: 1.3;
+}
+
+.message1 {
+    text-transform: uppercase;
+    color: #264653;
+    font-weight: bold;
+}
+
+button {
+    background-color: #e9c46a;
+    padding: .5rem;
+    color: white;
+    text-shadow: 2px 2px #264653;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-1 {
+    width: 20%;
+    height: 6rem;
+    padding: .5rem;
+    background-color: #e76f51;
+    border-radius: 30px;
+    color: white;
+    text-shadow: 2px 2px orangered;
+    font-size: 1.5rem;
+}
+
+.error {
+  animation: shake 0.2s ease-in-out 0s 2;
+  box-shadow: 0 0 0.5em red;
+}
+
+
+@keyframes shake {
+0% { margin-left: 0rem; }
+25% { margin-left: 0.5rem; }
+75% { margin-left: -0.5rem; }
+100% { margin-left: 0rem; }
+}
+
+.hidden {
+    display: none;
+}
+
+.positive {
+    background-color: rgb(12, 136, 12);
+    color: white;
+}
+
+.negative {
+    background-color:  rgb(196, 57, 57);
+    color: white;
+}
+
+.btn-1 {
+    width: 10%;
+}

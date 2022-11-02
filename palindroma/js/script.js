@@ -16,4 +16,4 @@ function isPalindrome(word) {
     } else {
         return false
     }
-}
+};
